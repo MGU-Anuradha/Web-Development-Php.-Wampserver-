@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+</head>
+<body>
+
+    <form name="SignUpForm" onsubmit="return validateFields()">
+
+        <p id="error"></p>
+        <label for="username" id="usernamelabel">Username : </label>
+        <input type="text" name="username" id="username" onkeydown="usernameValidation()"><br><br>
+        <label for="password" id="passwordlabel">Password : </label>
+        <input type="password" name="password" id="password" onkeydown="passwordValidation()"><br><br>
+        <label for="confmpass" id="confpasswordlabel">Confirm Password: </label>
+        <input type="password" name="confmpass" id="confmpass" onkeydown="confpassValidation()"><br><br>
+        <input type="submit" value="signup">
+
+
+    </form>
+   
+    <script src="script.js">
+    </script>
+
+
+</body>
+</html>
